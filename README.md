@@ -96,6 +96,16 @@ npx prisma db push
 npm run dev
 ```
 
+## 📐 Arquitetura do Sistema
+
+   
+```mermaid
+   graph TD
+       A[Front-end React] -->|Requisição HTTP / JSON| B[API Express Node.js]
+       B -->|Prisma ORM| C[(Banco MongoDB Atlas)]
+   
+```
+
 ## 👤 Autor
 
 **João Paulo Campos de Souza**  
